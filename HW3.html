@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help desk</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Contact Us</h1>
+    <fieldset>
+        <legend><b>Contact Information</b></legend>
+        <form action="" method="post">
+        <label for="name"> Full Name:</label>
+        <input type="text" id="name" name="name" required autofocus><br><br>
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" name="number" required placeholder="Enter Number" maxlength="10"><br><br>
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+            <option value="">----------</option>
+            <option value="sales">Sales</option>
+            <option value="support">Support</option>
+            <option value="marketing">Marketing</option>
+        </select><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required maxlength="200"></textarea><br><br>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+        <input type="submit" value="Submit">
+        <p style="text-align: center;">All rights reserved. &copy; 2026 New Company</p>
+        </form>
+    </fieldset>
+</body>
+</html>
