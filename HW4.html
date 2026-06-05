@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery</title>
+</head>
+<style>
+    header, footer 
+    {
+        background-color: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+    }
+    audio, iframe{
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Media Gallery</h1>
+        <p>
+            Explore our featured video and audio content and learn from industry experts.
+        </p>
+    </header>
+    <main>
+        <section>
+            <h2>Featured Video</h2>
+            <p>
+                This video provides insights into the latest trends in technology and innovation. Watch it to stay updated with the current industry standards and practices.
+            </p>
+            <iframe
+                width="660px"
+                height="415px"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube Video Player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </section>
+        <section>
+            <h2>Featured Audio</h2>
+            <p>
+                Listen to this audio clip to gain insights from industry experts on the latest trends and best practices in technology and innovation.
+            </p>
+            <audio controls>
+                <source src="audio/sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Media Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

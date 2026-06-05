@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Series</title>
+    
+</head>
+<style>
+    header,
+    footer {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    main {
+        flex: 3;
+    }
+
+    aside {
+        flex: 1;
+        padding: 15px;
+        border-left: 2px solid #ddd;
+    }
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    figcaption {
+        margin-top: 8px;
+    }
+
+    iframe,
+    audio {
+        width: 80%;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Welcome to the Beginner Podcast Series</h1>
+        <p>
+            Discover the world of podcasts with our curated selection of beginner-friendly episodes.
+        </p>
+    </header>
+    <div class="container">
+        <main>
+            <section>
+                <h2>
+                    Host Welcome Message
+                </h2>
+                <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Welcome Video"
+                    width="560" height="415"
+                    allowfullscreen>
+                </iframe>
+                <p>
+                    Welcome to the Beginner Podcast Series! In this episode, we'll introduce you to the exciting world of podcasting and provide you with everything you need to get started.
+                </p>
+                <h2>
+                    Episode 1: Introduction to Podcasting
+                </h2>
+                <audio controls>
+                    <source src="episode1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>
+                    In this episode, we explore the basics of podcasting, including how to choose a topic, set up your recording space, and publish your first episode.
+                </p>
+            </section>
+            <section>
+            <h2>
+                Podcast Storage Info
+            </h2>
+            <p>
+                All podcast episodes are stored securely on our servers and are accessible to listeners worldwide. We use reliable hosting services to ensure that your episodes are available whenever your audience wants to listen.
+            </p>
+        </section>
+        </main>
+        <aside>
+            <h2>
+                Our Host
+            </h2>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif" alt="Podcast Host">
+                <figcaption>Jane Doe, Podcast Host</figcaption>
+            </figure>
+            <p>
+                Jane Doe is an experienced podcaster with a passion for sharing knowledge and inspiring others to create their own podcasts. With over 10 years in the industry, Jane has hosted numerous successful shows and is excited to guide you through your podcasting journey.
+            </p>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2026 Beginner Podcast Series. All rights reserved.</p>
+    </footer>
+</body>
+</html>
