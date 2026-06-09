@@ -6,7 +6,13 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Contact Us</h1><hr>
+    <header style="text-align: center;">
+        <h1>Contact Us</h1>
+        <a href="news_list.html" target="_blank">Home</a> | 
+        <a href="about_us.html" target="_blank">About Us</a> | 
+        <a href="contact_us.html">Contact Us</a>
+        <hr>
+    </header>
 
     <p>
         We value your feedback and would love to hear from you. Whether you have
@@ -24,16 +30,16 @@
         <input type="text" id="name" name="name" required autofocus><br><br>
 
         <label for="tel">Phone Number:</label>
-        <input type="tel" id="tel" name="tel" required  placeholder="Enter Number" maxlength="10"><br><br>
+        <input type="tel" id="tel" name="tel" required  placeholder="Enter Number" maxlength="10" pattern="[0-9]{10}"><br><br>
 
         <label for="subject">Subject:</label>
         <select id="subject" name="subject" required>
             <option value="">----------</option>
             <option value="sales">Sales</option>
             <option value="Service">Support</option>
-            <option value="Enquiry">Marketing</option>
-            <option value="Advertisement">Marketing</option>
-            <option value="Complaint">Marketing</option>
+            <option value="Enquiry">Enquiry</option>
+            <option value="Advertisement">Advertisement</option>
+            <option value="Complaint">Complaint</option>
         </select><br><br>
 
         <label for="message">Message:</label><br>
@@ -43,7 +49,6 @@
         </form>
     </fieldset>
 
-    
     <footer style="text-align: center; margin-top: 250px;">
         <p>&copy; 2026 News Listing. All rights reserved.</p>
     </footer>
