@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Your name...">
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required value="test@example.com">
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required pattern=".{6}" title="Password must be at least 6 characters long" maxlength="6">
+    <br><br>
+
+    <label for="message">Category</label>
+    <select id="message" name="message" required>
+      <option value="student">Student</option>
+      <option value="employee">Employee</option>
+      <option value="freelancer">Freelancer</option>
+    </select>
+    <br><br>
+
+    <label for="date">Event Date:</label>
+    <input type="date" id="date" name="date" required>
+    <br><br>
+
+    <input type="radio" id="payment" name="payment" required>
+    <label for="payment">1 Ticket</label>
+    <input type="radio" id="payment" name="payment" required>
+    <label for="payment">2 Tickets</label>
+    <input type="radio" id="payment" name="payment" required>
+    <label for="payment">3 Tickets</label><br><br>
+
+    <input type="checkbox" id="payment" name="payment" required>
+    <label for="payment">Online payment</label>
+    <br><br>
+
+    <label for="notes">Additional Notes:</label><br>
+    <textarea id="notes" name="comments" placeholder="Additional notes...">
+    </textarea>
+    <br><br>
+
+    <input type="submit" value="Submit" required>
+  
+  </form>
+</body>
+</html>
