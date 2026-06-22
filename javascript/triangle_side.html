@@ -1,0 +1,28 @@
+<!--3side eqi]ui
+2side isosce
+1side scalene-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("enter the sides"));
+        let b = Number(prompt("enter the sides"));
+        let c = Number(prompt("enter the sides"));
+
+        console.log(`the sides are ${a}, ${b}, ${c}`);
+
+        if ((a==b && b==c) || a==c){
+            console.log("isosceles triangle")
+        }else if (a!==b && a!==c && b!==c){
+            console.log("scalene triangle")
+        }else if (a==b==c){
+            console.log("equilateral triangle")
+        }
+    </script>
+</body>
+</html>
