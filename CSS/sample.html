@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
        h1{
             color: blue;
             text-align: center;
@@ -21,21 +22,32 @@
             background-color: grey;
             box-sizing: border-box;
         }
-        div{
+        /* div{
             width: 300px;
             background-color: white;
             padding: 10px;
             margin: auto;
+        } */
+
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+        .child{
+            background-color: blue;
         }
     </style>
+
+
 </head>
 <body>
     <h1>Hello world</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur molestias earum eius ea. Laborum dolorem numquam facilis repellendus hic, quia eos impedit cupiditate earum pariatur aspernatur tempore, nemo ipsa commodi!</p>
     <span>iam span</span>
-    <div>
-        <input type="text" name="" id=""><br>
-        <input type="text" name="" id="">
+    <div class="parent">
+        <div class="child">box1</div>
+        <div class="child">box3</div>
+        <div class="child">box4</div>
+        <div class="child">box5</div>
     </div>
 </body>
 </html>
