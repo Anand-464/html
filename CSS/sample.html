@@ -1,53 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-       h1{
-            color: blue;
-            text-align: center;
-        } 
-        p{
-            background-color: yellow;
-            width: 150px;
-        }
-        span{
-            background-color: red;
-            width: 300px;
-        }
-        body{
-            background-color: grey;
-            box-sizing: border-box;
-        }
-        /* div{
-            width: 300px;
-            background-color: white;
-            padding: 10px;
-            margin: auto;
-        } */
+<style>
+.div1 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
 
-        *{
-            font-family: "Poppins", sans-serif;
-        }
-        .child{
-            background-color: blue;
-        }
-    </style>
+.div2 {
+  border: 1px solid red;
+}
 
+.div3 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
 
+.div4 {
+  border: 1px solid red;
+  clear: left;
+}
+</style>
 </head>
 <body>
-    <h1>Hello world</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur molestias earum eius ea. Laborum dolorem numquam facilis repellendus hic, quia eos impedit cupiditate earum pariatur aspernatur tempore, nemo ipsa commodi!</p>
-    <span>iam span</span>
-    <div class="parent">
-        <div class="child">box1</div>
-        <div class="child">box3</div>
-        <div class="child">box4</div>
-        <div class="child">box5</div>
-    </div>
+
+<h2>Without clear</h2>
+<div class="div1">div1</div>
+<div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+<br><br>
+
+<h2>With clear</h2>
+<div class="div3">div3</div>
+<div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+
 </body>
 </html>
