@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog post</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            padding: 30px;
+        }
+        .main{
+            width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            border: 2px solid grey;
+            border-radius: 30px;
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+        p::first-letter{
+            font-size: larger;
+            color: red;
+        }
+        blockquote{
+            background-color: #cdcdcd;
+            border-left: 5px solid #646464;
+            padding: 15px;
+            margin: 20px 0px;
+            font-style: italic;
+        }
+        blockquote::before{
+            content:"“";
+        }
+        a:visited{
+            color: purple;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        h4{
+            display: inline-block;
+            margin-right:30px;
+        }
+        h4+h4{
+            color: green;
+        }
+        h3{
+            color: #646464;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Blog post</h2>
+        <h3> By John</h3>
+        <p class="short">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis possimus repudiandae asperiores quos perferendis laudantium, ipsa dolores, numquam dicta ducimus temporibus impedit. Veniam magnam quam doloremque rerum incidunt officia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo officia cupiditate similique nesciunt, molestias, laboriosam illum omnis, accusamus itaque numquam temporibus ipsa suscipit pariatur sed sit? Pariatur ex eveniet dolores!
+        </p>
+
+        <blockquote>
+            Practice every day because consistency is the key to mastering web development.
+        </blockquote>
+
+        <p>
+            For more details visit <a href="https://www.google.com">profile</a> and your thoughts on <a href="https://www.google.com">social media</a>
+        </p><hr>
+
+        <h4>Latest</h4>
+        <h4>Previous</h4>
+    </div>
+</body>
+</html>
