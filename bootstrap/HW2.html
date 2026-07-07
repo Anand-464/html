@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Team Profile</title>
+
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        img{
+            border:5px solid #0d6efd;
+        }
+        .quote{
+            font-style: italic;
+            color: grey;
+        }
+        .card{
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1 class="display-4 font-weight-bold text-primary">
+            NovaTech Solutions
+        </h1>
+        <h4 class="text-secondary">
+            Team Profile
+        </h4>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body text-center">
+            <p class="quote h5">
+                "Alone we can do so little; together we can do so much."
+            </p>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-primary text-white">
+            Team Values
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item">Innovation</li>
+                <li class="list-group-item">Collaboration</li>
+                <li class="list-group-item">Integrity</li>
+                </ul>
+        </div>
+    </div>
+    <div class="mb-5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9u1jMygGx6gGbw_-sQ8sOLEUBQQfipVa_G0iLrJQhzXZ5hmb5Ig4KcOU&s=10" alt="group_image" class="rounded-circle mx-auto d-block" width="250" height="250">
+    </div>
+
+    <div class="alert alert-warning">
+        Some employees are currently unavailable. Please check their status below!
+    </div>
+
+    <div class="card shadow">
+        <div class="card-header bg-dark text-white">
+            Employee Details
+        </div>
+
+        <div class="table-responsive">
+                <table class="table table-bordered table-hover mb-0 text-center align-middle">
+
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Alice</td>
+                            <td>Project Manager</td>
+                            <td>
+                                <span class="badge badge-success">Active</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Brian</td>
+                            <td>UI/UX Designer</td>
+                            <td>
+                                <span class="badge badge-warning">On Leave</span>
+                            </td>
+                            </tr>
+
+                        <tr>
+                            <td>John</td>
+                            <td>Software Engineer</td>
+                            <td>
+                                <span class="badge badge-danger">Resigned</span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+           
+    </div>
+    
+</body>
+</html>

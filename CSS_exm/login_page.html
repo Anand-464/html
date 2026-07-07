@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{ 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .grad{
+            background: linear-gradient(to top, rgb(254 203 84 / 40%), rgb(146 117 255 / 40%));
+            width: 150%;
+            height: 100vh;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+        }
+        .card{
+            align-content: center;
+            width: 150%;
+            background: white;
+            padding: 30px;
+        }
+
+        .card h3{
+            font-size: 35px;
+            font-weight: 500;
+            color: rgb(156, 42, 0);
+            margin-bottom: 40px;
+        }
+
+        label{
+            display: block;
+            margin-top: 15px;
+        }
+
+        input[type="email"],
+        input[type="password"]{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        input[type="checkbox"]{
+            margin: 20px 5px 20px 0px;
+        }
+
+        button{
+            font-size: 17px;
+            font-weight: bold;
+            width: 100%;
+            padding: 10px;
+            background: rgb(156, 42, 0);
+            color: white;
+            border: none;
+        }
+
+        button:hover{
+            opacity: 0.8;
+        }
+        
+        @media(max-width:660px){
+            .grad{
+            display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="grad"></div>
+        <div class="card">
+
+            <h3>Login Form</h3>
+
+            <label for="email">Email: </label>
+            <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+            <label for="password">Password: </label>
+            <input type="password" required maxlength="10">
+
+            <input type="checkbox" required>Remember me
+
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+</html>

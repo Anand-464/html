@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product card</title>
+
+    <style>
+        body{
+            background-color: rgb(86, 86, 86);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .card{
+            background-color: white;
+            width: 315px;
+            height: 415px;
+            margin: 50px 10px;
+            padding: 10px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            border: 2px solid darkgray;
+        }
+        .card img{
+            width: auto;
+            height: 280px;
+            border: 2px solid black;
+            border-radius: 30px 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: flex;
+            align-content: flex-end;
+            justify-content: space-between;
+        }
+        a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .btn{
+            background-color: #4c32ff;
+            padding: 10px;
+            border-radius: 25px;
+            display: inline-block;                  
+        }
+        .btn:hover{
+            background-color: #2200fe;;
+        }
+        @media only screen and (max-width: 600px){
+            .card{
+                font-size: smaller;
+                height: auto;
+                margin: 50px auto;
+                text-align: center;
+            }
+            .card img{
+                height: auto;
+            }
+        }
+        @media only screen and (min-width: 768px){
+            .card{
+                text-align: center;
+                height: auto;
+                margin: 50px auto;
+            }
+        }
+        @media only screen and (orientation:landscape){
+            body{
+                background-color:lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://www.myg.in/images/thumbnails/300/300/detailed/118/Apple-iphone-17-pro-deep-blue-1Tb-Front-Back-View.png.png" alt="iphone 17 pro">
+        <div class="parent">
+            <div class="child"><b>iphone 17 pro</b></div>
+            <div class="child">&#8377; 1,50,000</div>
+        </div>
+        <div class="btn">
+            <a href="">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>
