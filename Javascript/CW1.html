@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Total earning</h4>
+    <p id="total_earning"></p>
+    <h4>Updated earning</h4>
+    <p id="new_earning"></p>
+    <script>
+        let tshirt = 5;
+        let cap = 3;
+        
+        let price_tshirt = 400;
+        let price_cap = 150;
+
+        let item_sold = 5+3;
+        let ear_tshirt = 5*400;
+        let ear_cap = 3*150;
+        let new_price = 5*450;
+
+        document.getElementById("total_earning").innerHTML = ear_tshirt + ear_cap;
+        document.getElementById("new_earning").innerHTML = new_price + ear_cap; 
+
+    </script>
+</body>
+</html>

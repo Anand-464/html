@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rice = "Rice";
+        let sugar = "Sugar";
+        let wheat = "Wheat";
+
+        let rice_price = 60;
+        let sugar_price = 45;
+        let wheat_price = 50;
+
+        let rice_quantity = 2;
+        let sugar_quantity = 3;
+        let wheat_quantity = 4;
+
+        let rice_cost = rice_price * rice_quantity;
+        let sugar_cost = sugar_price * sugar_quantity;
+        let wheat_cost = wheat_price * wheat_quantity;
+
+        console.log(rice + " Cost: " + rice_cost);
+        console.log(sugar + " Cost: " + sugar_cost);
+        console.log(wheat + " Cost: " + wheat_cost);
+
+        let total_bill = rice_cost + sugar_cost + wheat_cost;
+
+        console.log("Total Bill: " + total_bill);
+
+        sugar_quantity = 5;
+
+        sugar_cost = sugar_price * sugar_quantity;
+
+        total_bill = rice_cost + sugar_cost + wheat_cost;
+
+        console.log("Updated Total Bill: " + total_bill);
+    </script>
+</body>
+</html>
