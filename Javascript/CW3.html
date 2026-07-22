@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="trim"></p>
+    <p id="lowercase"></p>
+    <p id="replace"></p>
+    <p id="pos"></p>
+    <p id="arr"></p>
+    
+    <script>
+        var feedback = "   I loved the FOOD and the service!   ";
+
+        var trim = feedback.trim();
+        document.getElementById("trim").innerHTML = trim;
+
+        var lowercase = feedback.toLowerCase();
+        document.getElementById("lowercase").innerHTML = lowercase;
+
+        var replace = feedback.replace(/food/i ,"ambience");
+        document.getElementById("replace").innerHTML = replace;
+        
+        var pos = feedback.indexOf("service");
+        document.getElementById("pos").innerHTML = pos;
+
+        var arr = feedback.split(" ");
+        document.getElementById("arr").innerHTML = arr;
+               
+    </script>
+</body>
+</html>
