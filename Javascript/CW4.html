@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const random = Math.floor(Math.random()*100)+1;
+        const userScore = "75";
+        const diff = random - userScore;
+        const rndSqrt = Math.round(Math.sqrt(userScore));
+        const string = "50"
+
+        console.log(`Random number = ${random}`);
+        console.log(`String conversion = ${Number(userScore)}`);
+        console.log(`Difference = ${diff}`);
+        console.log(`Rounded sqrt = ${rndSqrt}`);
+        console.log(`Pi constant = ${Math.PI}`);
+        console.log(`Implicit conversion and multiplication = ${string * 2}`);
+    </script>
+</body>
+</html>
