@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Check Admin Eligibility</p>
+    <button onclick="checkEligible()">Check</button>
+    <p id="demo"></p>
+    <script>
+        let user ={
+            userName:"John",
+            age: 21,
+            admin: true
+        };
+        function checkEligible(){
+            let adminAccess = ((user.age>=18)&&(user.admin==true))?"Access Granted" : "Access denied";
+            let checkAge = 'age' in user;
+
+            delete user.age;
+
+            document.getElementById('demo').innerHTML = `Admin access = ${adminAccess} <br> Age exists = ${checkAge}`;
+
+            console.log('Age exists:',checkAge);
+            console.log('Age removed:',!('age' in user));      
+        }
+    </script>
+</body>
+</html>

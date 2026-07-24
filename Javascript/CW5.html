@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Check for return eligibility</p>
+    <button onclick="checkReturn()">Check Return Eligibility</button>
+    <p id="demo"></p>
+    <script>
+        let order = {
+            itemName: 'Dictionary',
+            isDelivered: true,
+            daysSinceDelivery: 5
+        };
+        function checkReturn() {
+            let hasItemName = 'itemName' in order;
+            let message = ((order.isDelivered) && (order.daysSinceDelivery <= 7))? 'Eligible for Return' : 'Return Period Expired';
+
+            document.getElementById('demo').innerHTML = `Property itemName exists: ${hasItemName}<br>${message}`;
+            delete order.daysSinceDelivery;
+            console.log('itemName exists:', hasItemName);
+            console.log('daysSinceDelivery removed:', !('daysSinceDelivery' in order));
+        }
+    </script>
+</body>
+</html>
