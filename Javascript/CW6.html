@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product = ["banana","orange","apple","berry","lemon"];
+        let price = [75,45,95,40,50];
+
+        let priceList = product.map((product, index) => {
+            return `Product: ${product}--Price: ${price[index]}`;
+        });
+        console.log("PriceList");
+        console.log(priceList);
+
+        console.log("\nAll products: ");
+        for(i=0; i<priceList.length; i++){
+            console.log(priceList[i]);
+        }
+
+        console.log("\nPrices > 50: ");
+        let expPro = product.filter((product, index) => price[index] > 50);
+        expPro.forEach(product => {
+            let index = product.indexOf(product);
+            console.log(`Product: ${product}--Price: ${price[index]}`);
+        });
+
+        product.push("watermelon");
+        price.push(80);
+        let upList = product.map((product, index) => {
+            return `Product: ${product}--Price: ${price[index]}`;
+        });
+        console.log("\nUpdated Product List:");
+        upList.forEach(item => console.log(item));
+    </script>
+</body>
+</html>
