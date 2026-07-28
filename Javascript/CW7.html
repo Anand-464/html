@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>birthday tracker</title>
+</head>
+<body>
+    <script>
+        let friend =[
+            {name:"John",date: "2000-01-15"},{name: "Mark",date:"2000-11-01"},{name: "Peter",date: "1999-08-25"},{name: "Sam",date: "2002-04-02"}
+        ];
+
+        function getBdayDetails(){
+            for(i=0; i<friend.length; i++){
+                let bday = new Date(friend[i].date);
+                let today = new Date();
+                let age = today.getFullYear() - bday.getFullYear();
+                let monthDiff = today.getMonth() - bday.getMonth();
+                if(monthDiff < 0 || (monthDiff === 0 && today.getDate() < bday.getDate())){
+                    age--;
+                }
+                let day = bday.getDate();
+                let month = bday.toLocaleString("default",{month: "long"});
+                let year = bday.getFullYear();
+                console.log(`${friend[i].name} was born on ${day} ${month} ${year} and is ${age} years old`);
+            }
+        }
+        getBdayDetails();
+    </script>
+</body>
+</html>

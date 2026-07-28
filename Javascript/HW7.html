@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event reminder</title>
+</head>
+<body>
+    <h2>Event Reminder</h2>
+    <label>Enter the date</label>
+    <input type="date" id="eventDate">
+    <button onclick="showDetails()">Show details</button>
+    <p id="result"></p>
+
+    <script>
+        function showDetails(){
+            let inputDate = document.getElementById("eventDate").value;
+            if(inputDate===""){
+                alert("Select a date");
+                return;
+            }
+            let eventDate = new Date(inputDate);
+            let today = new Date();
+
+            let day = eventDate.getDate();
+            let month = eventDate.toLocaleString("default",{month: "long"});
+            let year = eventDate.getFullYear();
+
+            let yearPassed = today.getFullYear() - eventDate.getFullYear();
+            let monthDiff = today.getMonth() - eventDate.getMonth();
+            if(monthDiff<0 || (monthDiff===0 && today.getDate()<eventDate.getDate())){
+                yearPassed--;
+            }
+            let message;
+            if(yearPassed>=1){
+                message = "It has been more than a year since that date";
+            }else{
+                message = "It has been less than a year since that date";
+            }
+            document.getElementById("result").innerHTML=`Date: ${day} ${month}, ${year}<br> Years passed: ${yearPassed}<br> ${message}`;
+
+        }
+    </script>
+</body>
+</html>
