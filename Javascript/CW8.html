@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery calculator</title>
+</head>
+<body>
+    <script>
+        let count = 0;
+
+        while(count<5){
+            let inputCode = Number(prompt("Enter the code"));
+            let inputQty = Number(prompt("Enter the quantity"));
+
+            let itemName = "";
+            let itemPrice = 0;
+
+            switch(inputCode){
+                case 1:
+                    itemName = "Apple";
+                    total = inputQty * 30;
+                    break;
+                case 2:
+                    itemName = "Banana";
+                    total = inputQty * 10;
+                    break;
+                case 3:
+                    itemName = "Mango";
+                    total = inputQty * 50;
+                    break;
+                default:
+                    alert("Invalid code");
+                    continue;
+            }
+            console.log("\nItem name: " + itemName);
+            console.log("Quantity: " + inputQty);
+            console.log("Total price: " + total );
+            
+            if(total>100){
+                console.log("High purchase");
+            }else{
+                console.log("Normal purchase");
+            }
+            count++;
+        }
+        
+        
+    </script>
+</body>
+</html>

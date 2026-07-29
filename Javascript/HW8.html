@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+</head>
+<body>
+    <script>
+        let chances = 0;
+        while(chances<5){
+            let guess = Number(prompt("Enter a no: btw 1 & 5:"));
+            if(guess<1||guess>5){
+                console.log("wrong input");
+                continue;
+            }
+            chances++;
+            switch(guess){
+                case 1:
+                    console.log("Input is: one");
+                    break;
+                case 2:
+                    console.log("Input is: two");
+                    break;
+                case 3:
+                    console.log("Input is: three");
+                    break;
+                case 4:
+                    console.log("Input is: four");
+                    break;
+                case 5:
+                    console.log("Input is: five");
+                    break;
+            }
+            if(guess===3){
+                console.log("You guessed it right!");
+                break;
+            }else{
+                console.log("Wrong guess,try again");
+            }
+        }
+        if(chances===5){
+            console.log("\nGame over");
+        }
+    </script>
+</body>
+</html>
