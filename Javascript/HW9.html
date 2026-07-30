@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment filter</title>
+</head>
+<body>
+    <script>
+        var str = "I think this movie was BAD and 100% Stupid! But the Acting was Amazing and 3 actors were great"
+        console.log(str);
+        if(str){
+            var newStr = str.replace(/BAD|Stupid|ugly/gi,"***");
+            console.log(newStr);
+            var num = str.match(/[0-9]+/g);
+            var numCount = num? num.length:0;
+            console.log("Number count: "+ numCount);
+            var cap = str.match(/\b[A-Z][a-zA-Z]*\b/g);
+            var capCount = cap? cap.length:0;
+            console.log("Capital count: "+ capCount);
+        }
+        
+    </script>
+</body>
+</html>
