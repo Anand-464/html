@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jsonData = `{
+            "name": "John Doe",
+            "email": "john.doe@example.com",
+            "message": "Hello, World!"
+        }`;
+        let prntMsg = () =>{
+            try{
+                let user =JSON.parse(jsonData);
+                console.log(`Message received from ${user.name}`);
+            }catch(err){
+                console.log("Error parsing JSON:", err.message);
+            }
+        };
+        prntMsg();
+    </script>
+</body>
+</html>
