@@ -1,0 +1,37 @@
+<!--Create a simple web page with a text box, a submit button, and a paragraph. When a user enters text and clicks the button:
+The text should appear in the paragraph in blue color.
+When the user hovers over the paragraph, the text should turn green.
+When the user moves the mouse out of the paragraph, the text should turn back to blue.
+Use a form and prevent the page from reloading when the button is clicked.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="myfunction(event)">
+        <input type="text" id="txt">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <p id="demo" onmouseover="movein()" onmouseout="moveout()"></p>
+
+    <script>
+        function myfunction(event){
+            event.preventDefault();
+            let x = document.getElementById("txt");
+            document.getElementById("demo").innerHTML = x.value;
+            document.getElementById("demo").style.color = "blue";
+        }
+        function movein(){               
+            document.getElementById("demo").style.color = "green";
+        }
+        function moveout(){
+            document.getElementById("demo").style.color = "blue";
+        }
+        
+    </script>
+</body>
+</html>

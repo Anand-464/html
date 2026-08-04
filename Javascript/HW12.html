@@ -1,0 +1,54 @@
+<!--Create a simple feedback web page that includes:
+A form with:
+    A text input for the user's name
+    A textarea for their feedback
+A submit button
+    When the form is submitted:
+   The input values (name and feedback) should display on the same page without refreshing.
+   A confirmation message (e.g., “Thanks for your feedback!”) should be shown in green.
+   After 5 seconds, the confirmation message should disappear automatically.
+When the mouse hovers over the feedback display, the text should turn blue. When the mouse leaves, it should return to black.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="myfunction(event)">
+        <label>Name:</label>
+        <input type="text" id="name"><br><br>
+
+        <label>Feedback:</label>
+        <textarea name="feedback" id="feedback"></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <p id="demo" onmouseover="movein()" onmouseout="moveout()"></p>
+    <p id="confirm"></p>
+
+    <script>
+        function myfunction(event){
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let feedback = document.getElementById("feedback").value;
+            document.getElementById("demo").innerHTML = name + feedback;
+
+            let msg = document.getElementById("confirm");
+            document.getElementById("confirm").innerHTML = "Thanks for your feedback!";
+            document.getElementById("confirm").style.color = "green";
+
+            setTimeout(function(){
+                document.getElementById("confirm").innerHTML = "";
+            },5000);
+        }
+        function movein(){
+            document.getElementById("demo").style.color = "blue";
+        }
+        function moveout(){
+            document.getElementById("demo").style.color = "black";
+        }
+    </script>
+</body>
+</html>
