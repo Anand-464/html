@@ -1,0 +1,27 @@
+<!--check a number is a armstrong number-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("enter a number"));
+        let arm =0;
+        let temp = num;
+        while(temp > 0){
+            let digit = temp % 10;
+            arm += Math.pow(digit, 3);
+            temp = Math.floor(temp / 10);
+        }
+        if(arm == num){
+            console.log(num + " is an Armstrong number");
+        } else {
+            console.log(num + " is not an Armstrong number");
+        }
+        console.log(arm)
+    </script>
+</body>
+</html>

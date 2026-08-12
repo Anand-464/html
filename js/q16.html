@@ -1,0 +1,28 @@
+<!--write a function-(hello) with name as input, pass the name from func(hello) to a second func(hi) also include a value 'welcome' call another third func(greet) with name + welcome add another value 'have a nice day' and print the entire value -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "Anand ";
+        function hello(){
+            let a = name;
+            hi(a);
+        }
+        function hi(a){
+            let b = "welcome";
+            greet(a,b)
+        }
+        function greet(a,b){
+            let c = "have a nice day";
+            let result = a.concat(b,c);
+            console.log(`Output is:--${result}`);
+        }
+        hello();
+    </script>
+</body>
+</html>
