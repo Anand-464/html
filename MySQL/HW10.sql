@@ -1,0 +1,5 @@
+CREATE DATABASE hw10;
+USE hw10;
+CREATE TABLE authors(author_id INT(10) PRIMARY KEY AUTO_INCREMENT, author_name VARCHAR(35), email VARCHAR(35) UNIQUE);
+
+CREATE TABLE books(book_id INT(10) PRIMARY KEY AUTO_INCREMENT, book_title VARCHAR(35), author_id INT(10), FOREIGN KEY(author_id) REFERENCES authors(author_id));
